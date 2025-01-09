@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <iostream>
 
 typedef long long ll;
 const int MAX = 5e4 + 5;
