@@ -38,7 +38,7 @@ void check(int x) {
     f[i] = i;
   }
   std::sort(e + 1, e + m + 1, cmp);
-  for (int i = 1, tmp = 0; i <= m and tmp != n - 1; ++i) {
+  for (int i = 1, tmp = 0; i <= m && tmp != n - 1; ++i) {
     int fu = find(e[i].u), fv = find(e[i].v);
     if (fu == fv) {
       continue;
