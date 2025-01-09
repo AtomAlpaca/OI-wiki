@@ -27,14 +27,14 @@ void init() {
 
 void solve() {
   init();
-  for (int i = 1; i <= m and _cnt < n - 1; ++i) {
+  for (int i = 1; i <= m && _cnt < n - 1; ++i) {
     int fu = find(e[i].u), fv = find(e[i].v);
     if (fu == fv) {
       continue;
     }
     ++_cnt;
     res += e[i].w;
-    cnt += (e[i].u == s or e[i].v == s);
+    cnt += (e[i].u == s || e[i].v == s);
     f[fv] = fu;
   }
 }
@@ -49,7 +49,7 @@ int main() {
   while (l <= r) {
     k = l + ((r - l) >> 1);
     for (int i = 1; i <= m; ++i) {
-      if (e[i].u == s or e[i].v == s) {
+      if (e[i].u == s || e[i].v == s) {
         e[i].w += k;
       }
     }
@@ -62,12 +62,12 @@ int main() {
     }
     mx = std::max(mx, cnt), mn = std::min(mn, cnt);
     for (int i = 1; i <= m; ++i) {
-      if (e[i].u == s or e[i].v == s) {
+      if (e[i].u == s || e[i].v == s) {
         e[i].w -= k;
       }
     }
   }
-  if (K > mx or K < mn) {
+  if (K > mx || K < mn) {
     printf("Impossible");
     return 0;
   }
