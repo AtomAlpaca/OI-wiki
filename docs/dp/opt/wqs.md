@@ -43,7 +43,7 @@ wqs 二分能解决带有以下特征的题目：
 
 ??? note "参考代码"
     ```c++
-    --8<-- "docs/dp/opt/code/wqs/wqs_1.cpp"
+    --8<-- "docs/dp/code/opt/wqs/wqs_1.cpp"
     ```
 
 ### [Tree I](https://www.luogu.com.cn/problem/P2619)
@@ -59,5 +59,5 @@ wqs 二分能解决带有以下特征的题目：
 
 ??? note "参考代码"
     ```c++
-    --8<-- "docs/dp/opt/code/wqs/wqs_2.cpp"
+    --8<-- "docs/dp/code/opt/wqs/wqs_2.cpp"
     ```
