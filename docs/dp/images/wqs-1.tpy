@@ -1,0 +1,31 @@
+#import "@preview/fletcher:0.5.1" as fletcher: diagram, node, edge
+#set page(height: auto, width: auto, fill: white)
+
+#diagram(
+  node-stroke: 1pt,
+  node-fill: black,
+  edge-stroke: 1pt,
+  {
+  let (n0, n1, n2, n3, n4, n5, n6, n7, n8) = ((0, 10), (1, 6), (3, 3), (5, 1), (9, 0), (12, 1), (15, 3), (17, 6), (19, 10))
+  node(n0, [0])
+  node(n1, [1])
+  node(n2, [2])
+  node(n3, [3])
+  node(n4, [4])
+  node(n5, [5])
+  node(n6, [6])
+  node(n7, [7])
+  node(n8, [8])
+  edge(n0, n1)
+  edge(n1, n2)
+  edge(n2, n3)
+  edge(n3, n4)
+  edge(n4, n5)
+  edge(n5, n6)
+  edge(n6, n7)
+  edge(n7, n8)
+  edge((n1.at(0) - 5, n1.at(1) + 3), (n1.at(0) + 5, n1.at(1) - 3), "--")
+  edge((n2.at(0) - 5, n2.at(1) + 3), (n2.at(0) + 5, n2.at(1) - 3), "--")
+  edge((n3.at(0) - 5, n3.at(1) + 3), (n3.at(0) + 5, n3.at(1) - 3))
+  }
+)
